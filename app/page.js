@@ -6,12 +6,13 @@ import Hero from "./components/Hero";
 import SmoothScroll from './components/SmoothScroll';
 import Publicrecord from "./components/Publicrecord";
 import IncomingCards from "./components/IncomingCards";
+import WomenSpeaking from "./components/WomenSpeaking";
 
 export default function Home() {
   return (
     <SmoothScroll>
-      <Header/>
-      <Navbar/>
+      {/* <Header/>
+      <Navbar/> */}
       <main className="">
         <section className="flex h-full min-h-screen bg-[var(--lavender)] text-[var(--black)]">
         <div className="w-full ml-auto mr-auto pl-[20px] pr-[20px]  relative m-0 flex max-w-[1260px]">
@@ -79,6 +80,7 @@ export default function Home() {
         <Hero/>
         <Publicrecord/>
         <IncomingCards/>
+        <WomenSpeaking/>
         {/* <div className="h-[400vh] w-full"></div> */}
       </main>
     </SmoothScroll>

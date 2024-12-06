@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+    
       screens:{
       'bmin1024maxh800': {'raw': '(min-width: 1024px) and (max-height: 800px)'},
       },
