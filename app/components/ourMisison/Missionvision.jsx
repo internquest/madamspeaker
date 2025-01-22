@@ -1,10 +1,52 @@
-import React from 'react'
+'use client'
+import { useMotionValueEvent, useScroll } from 'framer-motion'
+import React, { useEffect, useRef, useState } from 'react'
 
 const Missionvision = () => {
+    const [compotranan, setcompotransan] = useState('0%')
+    const [isfixed, setisfixed] = useState(false)
+    const ref=useRef(null)
+    const {scrollYProgress}=useScroll({
+        target: ref,
+        offset: ['start end', 'end end'],
+    })
+    useMotionValueEvent(scrollYProgress,'change',(latest)=>{
+       setcompotransan(latest);
+    //    if(latest===1){
+    //     setisfixed(true)
+    // }
+    // if(latest<1){
+    //     setisfixed(false)
+    // }
+    })
+    useEffect(()=>{
+        if(compotranan===1){
+            setisfixed(true)
+        }
+        if(compotranan<1){
+            setisfixed(false)
+        }
+        console.log(isfixed);
+        
+    },[compotranan])
+    // if(compotranan===1){    
+    //     setisfixed(true)
+    // }else{
+    //     setisfixed(false)
+    // }
+
+    // if(compotranan===1){
+    //     setisfixed(true)
+    // }
+    // if(compotranan<1){
+    //     setisfixed(false)
+    // }
+    // console.log(isfixed);
+    
   return (
-    <div className='relative '>
-      <section>
-        <div className='h-screen bg-[var(--lavender)] overflow-hidden'>
+    <div ref={ref} className='relative block h-screen '>
+      <section  style={{position: isfixed&&'fixed',left: isfixed&&'0',top: isfixed&&'0px'}}  className={` w-full`} >
+        <div  className='h-screen bg-[var(--lavender)] overflow-hidden'>
         <div class="box-border relative m-0 w-full h-full grid place-items-center">
             <div class="box-border relative m-0 flex justify-center items-center max-w-[800px] -mt-[8%]">
                 <span class="box-border absolute m-0 -top-[40%] z-[2] -right-[69%]">

@@ -1,6 +1,7 @@
 'use client'
 import { usePathname } from 'next/navigation';
 import React from 'react'
+import SpeechArchieve from './ourMisison/SpeechArchieve';
 
 const Footerand = () => {
     const pathname=usePathname();
@@ -40,6 +41,10 @@ const Footerand = () => {
 
 </section>
 
+}
+{
+    pathname==='/our-mission' &&
+    <SpeechArchieve/>
 }
 <footer class="box-border relative m-0 w-full z-[3] px-0 py-[50px] bg-[var(--chanterelle)] text-[var(--black)]">
             <div class="w-full ml-auto mr-auto pl-[20px] pr-[20px] box-border relative m-0 max-w-[1440px] flex justify-between items-end">

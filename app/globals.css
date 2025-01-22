@@ -17,6 +17,8 @@
   --border-radius-medium:10px;
   --border-radius-small:5px;
   --peach:#fac0f9;
+  --grey-dark:#dcd5c9;
+  
 }
 
 @media (prefers-color-scheme: dark) {

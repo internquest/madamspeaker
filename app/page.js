@@ -13,7 +13,7 @@ export default function Home() {
     <SmoothScroll>
       {/* <Header/>
       <Navbar/> */}
-      <main className="">
+      
         <section className="flex h-full min-h-screen bg-[var(--lavender)] text-[var(--black)]">
         <div className="w-full ml-auto mr-auto pl-[20px] pr-[20px]  relative m-0 flex max-w-[1260px]">
             <div className=" relative  mx-0 mb-0 w-full p-[30px] rounded-tl-[30px] rounded-br-none rounded-tr-[30px] rounded-bl-none flex justify-center bg-[var(--brown-tint)] items-center mt-[100px] before:content-[''] before:block before:w-[calc(100%-100px)] before:h-[calc(100%-100px)] before:absolute before:bottom-0 before:left-[50px] before:bg-[linear-gradient(to_bottom,var(--black),var(--brown-tint)_1px,var(--brown-tint)_20px)] before:bg-[length:100%_80px]">
@@ -82,7 +82,7 @@ export default function Home() {
         <IncomingCards/>
         <WomenSpeaking/>
         {/* <div className="h-[400vh] w-full"></div> */}
-      </main>
+      
     </SmoothScroll>
   );
 }
