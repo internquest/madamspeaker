@@ -87,7 +87,7 @@ const [contaienrstate, setcontaienrstate] = useState('');
                         <h3 className="font-[70] leading-[1.1] text-[40px] box-border relative m-0 break-words max-w-[480px]">
                             {startTyping ? (
                                 <TypeWriter 
-                                    text="What does the voice of power and authority sound like in your head<em class='box-border relative m-0 not-italic'>?</em>"
+                                    text="What does the voice of power and authority sound like in your head<em className='box-border relative m-0 not-italic'>?</em>"
                                     speed={60}
                                 />
                             ) : (
@@ -137,27 +137,27 @@ const [contaienrstate, setcontaienrstate] = useState('');
                                 </g>
                             </svg>
                         </div>
-                        <div class="box-border absolute m-0 top-0 left-0 h-full w-full">
-            <div style={{opacity:deepopacityval}} class="box-border absolute m-0 w-[200px] h-[200px] grid place-items-center text-[18px] top-[35%] -left-[150px] [rotate:-13deg] delay-200 transition-opacity duration-500  ">
+                        <div className="box-border absolute m-0 top-0 left-0 h-full w-full">
+            <div style={{opacity:deepopacityval}} className="box-border absolute m-0 w-[200px] h-[200px] grid place-items-center text-[18px] top-[35%] -left-[150px] [rotate:-13deg] delay-200 transition-opacity duration-500  ">
                 <svg width="198" height="198" viewBox="0 0 198 198" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" class="box-border absolute m-0 block max-w-full w-[200px] h-[200px]">
-                    <circle cx="98.5204" cy="98.5203" r="80.457" transform="rotate(-14.981 98.5204 98.5203)" fill="#FAC0F9" class="box-border relative m-0"></circle>
+                    xmlns="http://www.w3.org/2000/svg" className="box-border absolute m-0 block max-w-full w-[200px] h-[200px]">
+                    <circle cx="98.5204" cy="98.5203" r="80.457" transform="rotate(-14.981 98.5204 98.5203)" fill="#FAC0F9" className="box-border relative m-0"></circle>
                 </svg>
-                <span class="box-border relative m-0">"Deep?"</span>
+                <span className="box-border relative m-0">"Deep?"</span>
             </div>
-            <div style={{opacity:selfassopacityval}} class="box-border absolute m-0 w-[200px] h-[200px] grid place-items-center text-[18px] top-[60%] right-[130px] [rotate:-10deg] delay-[400ms]  text-[var(--peach-light)]">
+            <div style={{opacity:selfassopacityval}} className="box-border absolute m-0 w-[200px] h-[200px] grid place-items-center text-[18px] top-[60%] right-[130px] [rotate:-10deg] delay-[400ms]  text-[var(--peach-light)]">
                 <svg width="198" height="198" viewBox="0 0 198 198" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" class="box-border absolute m-0 block max-w-full w-[200px] h-[200px]">
-                    <circle cx="98.5204" cy="98.5203" r="80.457" transform="rotate(-14.981 98.5204 98.5203)" fill="#FAC0F9" class="box-border fill-[var(--blueberry)] relative m-0"></circle>
+                    xmlns="http://www.w3.org/2000/svg" className="box-border absolute m-0 block max-w-full w-[200px] h-[200px]">
+                    <circle cx="98.5204" cy="98.5203" r="80.457" transform="rotate(-14.981 98.5204 98.5203)" fill="#FAC0F9" className="box-border fill-[var(--blueberry)] relative m-0"></circle>
                 </svg>
-                <span class="box-border relative m-0">"Self assured?"</span>
+                <span className="box-border relative m-0">"Self assured?"</span>
             </div>
-            <div style={{opacity:masculineopacityval}} class="box-border absolute m-0 w-[200px] h-[200px] grid place-items-center text-[18px] top-2/4 right-[30px] [rotate:20deg] delay-[400ms]  [transition:opacity_0.5s]">
+            <div style={{opacity:masculineopacityval}} className="box-border absolute m-0 w-[200px] h-[200px] grid place-items-center text-[18px] top-2/4 right-[30px] [rotate:20deg] delay-[400ms]  [transition:opacity_0.5s]">
                 <svg width="198" height="198" viewBox="0 0 198 198" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" class="box-border absolute m-0 block max-w-full w-[200px] h-[200px]">
-                    <circle cx="98.5204" cy="98.5203" r="80.457" transform="rotate(-14.981 98.5204 98.5203)" fill="#FAC0F9" class="box-border fill-[var(--chanterelle)] relative m-0"></circle>
+                    xmlns="http://www.w3.org/2000/svg" className="box-border absolute m-0 block max-w-full w-[200px] h-[200px]">
+                    <circle cx="98.5204" cy="98.5203" r="80.457" transform="rotate(-14.981 98.5204 98.5203)" fill="#FAC0F9" className="box-border fill-[var(--chanterelle)] relative m-0"></circle>
                 </svg>
-                <span class="box-border relative m-0">"Masculine?"</span>
+                <span className="box-border relative m-0">"Masculine?"</span>
             </div>
         </div>
                     </div>
